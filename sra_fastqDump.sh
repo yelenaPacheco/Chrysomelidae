@@ -10,6 +10,11 @@
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
 
+##this script converts the SRA files in the downloaded directories from sraFetch.sh
+##to fastq files, you then can use the nameChange.py to change sequences names 
+#from accession numbers to species names. 
+##I got this script from R.Clement github 
+
 module load sratoolkit/3.0.2
 
 line=$(sed -n "$SLURM_ARRAY_TASK_ID"p srr_list.txt)
