@@ -9,13 +9,16 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
-
+##this script is used to download the SRX/SRR files from NCBI genBank
+## sra_fetch_dump_array.txt originally had srx accession numbers but should change 
+## it to the SRR accession numbers
+##I got this script from R. Celement github
 
 module load sratoolkit/3.0.2
 
 
 ##sets up array
-##sra_fetch_dump_array.txt includes list of sra accession numbers and species names 
+##sra_fetch_dump_array.txt includes list of srx accession numbers and species names 
 line=$(sed -n "$SLURM_ARRAY_TASK_ID"p sra_fetch_dump_array.txt)
 ##get just the species names (removes first field)
 ## cut is applied to individual line -f = field, 
@@ -27,3 +30,6 @@ echo $sra_id
 echo $taxon
 
 prefetch -X 9999999999999 $sra_id
+
+#-X 99999999 has to do with the time limit
+
