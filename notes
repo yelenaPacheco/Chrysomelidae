@@ -1,4 +1,13 @@
 Environments
 	Need full path to activate env not in home directory
+		conda env list
 	to install something in environment first activate it 
+		Then you don't need to specify the path to that environment
+	to list all packages in environment
+		conda list
 	
+
+
+
+Cluster
+  
