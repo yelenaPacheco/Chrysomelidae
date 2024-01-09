@@ -9,7 +9,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
-module load phyluce/1.7.2
+module load phyluce
 
 trimmed="/90daydata/leafbeetle_phylogenomics/yelena/Phyluce/trimmedReads"
 
