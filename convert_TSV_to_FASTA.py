@@ -12,5 +12,5 @@ with open('Coleoptera_AHE_probes.tsv', 'r') as f:
 			locus=line.split("\t")[0].strip()
 			refTaxon=line.split("\t")[1].strip()
 			sequence=line.split("\t")[2].strip()
-			fasta.write(">"+locus+'-'+refTaxon'\n'+sequence+'\n')
+			fasta.write(">"+refTaxon+'.'+locus+'\n'+sequence+'\n')
 
