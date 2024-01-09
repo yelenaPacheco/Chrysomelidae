@@ -10,4 +10,19 @@ Environments
 
 
 Cluster
+  sinfo for queue information
   
+  ls -d  */ | xargs rm -rf ##removes all directories and their contents without removing files 
+  ls -d */ #list all directories only 
+  
+
+
+ls -lrt --block-size=GB
+	##lists files' size in GB
+	
+	
+	
+If you would like to see what BLAST databases are available to download, please run:
+$ update_blastdb.pl --showall [*]
+
+
