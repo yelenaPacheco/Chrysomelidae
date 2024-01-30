@@ -9,7 +9,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
-
+#trimm adaptors from raw read fastq files 
 
 #create output directories for trimmed reads and output files 
 if [ ! -d trimmed_reads_Douglas ]
