@@ -4,6 +4,10 @@
 #SBATCH -p short
 #SBATCH -t 24:00:00
 
+
+#This script merges multiple raw read libraries into two files, one for forward read and one for reverse. 
+
+
 for file in *_1.fastq
 do
 	cp ${file} >> Anoplophora_glabripennis_all_1.fastq
