@@ -9,6 +9,10 @@
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
 
+#second step in Hybpiper pipline, gathers all contigs for each locus for all taxa in --sample_names file 
+#output is a fasta file for each locus
+
+
 module load miniconda
 source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
 
