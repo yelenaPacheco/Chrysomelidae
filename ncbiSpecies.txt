@@ -1,0 +1,24 @@
+Colaphellus_bowringi	SRR22371312
+Monochamus_alternatus	SRR21992444
+Macroplea_appendiculata	SRR10208309
+Rhagium_bifasciatum	SRR11233334
+Leptura_aurulenta	SRR11233354
+Acromis_sparsa	SRR10030202
+Basilepta_melanopus	SRR8187395
+Xylotrechus_quadripes	SRR7077078
+Zabrotes_subfasciatus	SRR17665719
+Agasicles_hygrophila	SRR15102653
+Ambrostoma_quadriimpressum	SRR12976624
+Saperda_populnea	SRR5527100
+Acanthoscelides_obtectus	SRR13069656
+
+
+
+SRR18141726	Diabrotica virgifera
+ERR6944599	Phaedon cochleariae
+ERR11271532	Plagiodera versicolora
+SRR23136095	Anoplophora glabripennis
+SRR21565630	Leptinotarsa decemlineata
+ERR3053164	Callosobruchus maculatus
+
+update_blastdb.pl --decompress nt [*]
