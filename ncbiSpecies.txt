@@ -21,4 +21,3 @@ SRR23136095	Anoplophora glabripennis
 SRR21565630	Leptinotarsa decemlineata
 ERR3053164	Callosobruchus maculatus
 
-update_blastdb.pl --decompress nt [*]
