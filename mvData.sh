@@ -9,6 +9,11 @@
 #SBATCH --mail-user=yelena.marlese@gmail.com\
 
 
+#scripte to move and compress raw reads and hybpiper output fasta files to project directory 
+
+
+
+
 cp *.fastq  rawReads_transcripts  
 
 gzip -r  rawReads_transcripts  
