@@ -9,13 +9,18 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com\
 
+
+#blast search for multiple fasta files against the  NCBI nucleotide database
+
+
+
 module load blast+/2.13.0
 
-
+#query.list includes a list of files used for -query
 infile=$(cat query.list | head -n ${SLURM_ARRAY_TASK_ID} | tail -n1)
-
 base=$(basename ${infile} _trinity.fasta)
 
+#path to nucleotide database on Ceres
 dataBase="/reference/data/NCBI/blast/2023-08-31/nt"
 
 
