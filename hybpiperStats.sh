@@ -8,6 +8,9 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
+#option step 3 in hyhbpiper pipeline
+#output gives a .tsv file with the number of reads mapped, number of contigs, etc. 
+
 
 module load miniconda
 source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
