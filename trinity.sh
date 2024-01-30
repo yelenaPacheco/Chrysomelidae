@@ -9,10 +9,11 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
+#Trinity transcript assembly using trimmomatic to remove adaptors from raw reads 
 
 
+#input.list includes all foraward read fastq files 
 infile=$(cat input.list | head -n ${SLURM_ARRAY_TASK_ID} | tail -n1)
-
 base=$(basename ${infile} _1.fastq)
 
 module load trinityrnaseq/2.15.1
