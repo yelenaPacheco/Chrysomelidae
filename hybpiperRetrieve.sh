@@ -14,4 +14,6 @@ source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
 
 
 
-hybpiper retrieve_sequences -t_dna ColeopteraProbes.fasta --sample_names directory.list --fasta_dir Douglas_sequences
+hybpiper retrieve_sequences -t_dna ColeopteraProbes.fasta dna --sample_names directory.list --fasta_dir Douglas_sequences
+
+conda deactivate
