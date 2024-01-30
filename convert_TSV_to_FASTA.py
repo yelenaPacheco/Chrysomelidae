@@ -3,7 +3,7 @@ from Bio.Seq import Seq
 import glob
 import os
 
-
+#Converts a .tsv file with format probe number, probe sequence to a FASTA file 
 
 with open('Coleoptera_AHE_probes.tsv', 'r') as f:
 	with open ('ColeopteraProbes.fasta', 'w') as fasta:
