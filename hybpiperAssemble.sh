@@ -9,6 +9,9 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
+#First step of hybpiper piperline, assembles individual loci contigs from raw reads for each individual taxon
+
+
 module load miniconda
 source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
 
