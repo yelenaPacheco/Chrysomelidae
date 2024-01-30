@@ -17,7 +17,7 @@
 
 module load sratoolkit/3.0.2
 
-line=$(sed -n "$SLURM_ARRAY_TASK_ID"p Douglas_Chrysomelid.tsv)
+line=$(sed -n "$SLURM_ARRAY_TASK_ID"p Douglas_Chrysomelid.tsv)		#.tsv file should be formatted: taxon name \t srrNumber 
 sra_id=`echo "${line}"|cut -f2`
 taxon=`echo "${line}"|cut -f1`
 echo $sra_id
