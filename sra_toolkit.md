@@ -9,5 +9,5 @@ Colaphellus_bowringi	SRR22371312
 Monochamus_alternatus	SRR21992444
 ```
 
-Use [sraFetch.sh](Chrysomelidae/sraFetch.sh) and replace the file name on line 22 (Douglas_Chrysomelid.tsv) with the name of your file containing species names and SRR numbers
+Use [sraFetch.sh](sraFetch.sh) and replace the file name on line 22 (Douglas_Chrysomelid.tsv) with the name of your file containing species names and SRR numbers
 
