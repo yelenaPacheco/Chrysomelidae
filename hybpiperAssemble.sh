@@ -30,7 +30,6 @@ hybpiper assemble \
 --bwa \
 --cpu 40 --bbmap_memory 10 --bbmap_threads 40
 
--
 
 conda deactivate
 
