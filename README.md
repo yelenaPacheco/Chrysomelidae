@@ -4,7 +4,8 @@
    See [sra_tookit.md](https://github.com/yelenaPacheco/Chrysomelidae/blob/main/sra_toolkit.md)
 3. Trim adaptor sequences from reads  
   See [fastp.md](fastp.md)
-5. Assemble reads and get sequence contigs
+5. Assemble reads and get sequence contigs  
+   See [hybpiper.md](hybpiper.md)
 6. Tree assembly 
 
 
