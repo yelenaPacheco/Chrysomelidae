@@ -15,10 +15,10 @@ Monochamus_alternatus	SRR21992444
 
 
 2. Use [sra_fastqDump.sh](sra_fastpDump.sh) to convert .sra files to fastq files.  
-  This will output two .fastq files per .sra file, one forward reads (R1) and one reverse reads (R2) file. 
+  This will output two .fastq files per .sra file, one forward reads (*_1.fastq) and one reverse reads (*_2.fastq) file. 
 4. Run [nameChange.py](nameChange.py) to change the name of each .fastq file to its taxon name from srr.txt.  
    Example: Taxon, Colaphellus_bowringi	SRR22371312
 ```
-oldName SRR22371312_R1.fastq   SRR22371312_R2.fastq
-newName Colaphellus_bowringi_R1.fastq   Colaphellus_bowringi_R2.fastq
+oldName SRR22371312_1.fastq   SRR22371312_2.fastq
+newName Colaphellus_bowringi_1.fastq   Colaphellus_bowringi_2.fastq
 ```
