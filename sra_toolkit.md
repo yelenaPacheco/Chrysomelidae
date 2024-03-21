@@ -10,13 +10,14 @@ Monochamus_alternatus	SRR21992444
 ```
 
 1. Run [sraFetch.sh](sraFetch.sh), this will download a directory for each SRR number with a .sra file in each directory.  
-  * This is an array job, so change the array range in the job header to the number of taxa in srr.txt.
+   This is an array job, so change the array range in the job header to the number of taxa in srr.txt.
 
 
 
-2. Use [sra_fastqDump.sh](sra_fastpDump.sh) to convert .sra files to fastq files.
-3. Run [nameChange.py](nameChange.py) to change the name of each .fastq file to its taxon name from srr.txt.
-  * Example: Taxon, Colaphellus_bowringi	SRR22371312
+2. Use [sra_fastqDump.sh](sra_fastpDump.sh) to convert .sra files to fastq files.  
+  This will output two .fastq files per .sra file, one forward reads (R1) and one reverse reads (R2) file. 
+4. Run [nameChange.py](nameChange.py) to change the name of each .fastq file to its taxon name from srr.txt.  
+   Example: Taxon, Colaphellus_bowringi	SRR22371312
 ```
 oldName SRR22371312.fastq
 newName Colaphellus_bowringi.fastq
