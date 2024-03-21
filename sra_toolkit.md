@@ -19,6 +19,6 @@ Monochamus_alternatus	SRR21992444
 4. Run [nameChange.py](nameChange.py) to change the name of each .fastq file to its taxon name from srr.txt.  
    Example: Taxon, Colaphellus_bowringi	SRR22371312
 ```
-oldName SRR22371312.fastq
-newName Colaphellus_bowringi.fastq
+oldName SRR22371312_R1.fastq   SRR22371312_R2.fastq
+newName Colaphellus_bowringi_R1.fastq   Colaphellus_bowringi_R2.fastq
 ```
