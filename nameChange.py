@@ -9,7 +9,7 @@ import os
 # First, it should read in the sra_fetch_dump_array_list.txt. Then, for each line, it should name the first part SRA and the second part taxname. It should change the name of the file called SRA_1.fastq to "other_","newname","_1.fastq"
 
 
-with open('Douglas_Chrysomelid.tsv') as f:
+with open('srr.txt') as f:
 	for line in f:
 		SRA=line.split("\t",1)[1].strip()
 		taxname=line.split("\t",1)[0].strip()
