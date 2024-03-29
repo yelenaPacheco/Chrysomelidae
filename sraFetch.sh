@@ -19,7 +19,7 @@ module load sratoolkit/3.0.2
 
 ##sets up array
 #Douglas_Chrysomelid.csv includes list of species name \t srr Number
-line=$(sed -n "$SLURM_ARRAY_TASK_ID"p Douglas_Chrysomelid.tsv)		
+line=$(sed -n "$SLURM_ARRAY_TASK_ID"p srr.txt)		
 ##get just the species names (removes first field)
 ## cut is applied to individual line -f = field, 
 sra_id=`echo "${line}"|cut -f1`
