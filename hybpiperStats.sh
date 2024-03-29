@@ -6,7 +6,7 @@
 #SBATCH -p short
 #SBATCH -t 2-00:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=yelena.marlese@gmail.com
+#SBATCH --mail-user=yelena.pacheco@uga.edu
 
 #option step 3 in hyhbpiper pipeline
 #output gives a .tsv file with the number of reads mapped, number of contigs, etc. 
