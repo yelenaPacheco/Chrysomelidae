@@ -7,7 +7,7 @@
 #SBATCH -p short
 #SBATCH -t 24:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=yelena.marlese@gmail.com
+#SBATCH --mail-user=yelena.pacheco@usda.gov
 
 #trimm adaptors from raw read fastq files 
 
