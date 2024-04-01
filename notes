@@ -19,10 +19,26 @@ Cluster
 
 ls -lrt --block-size=GB
 	##lists files' size in GB
+du -h -d 1  ## get summary of size of each directory 
 	
-	
+--mem max memory per node
+--mem-per-cpu=MaxMemPerCPU
 	
 If you would like to see what BLAST databases are available to download, please run:
 $ update_blastdb.pl --showall [*]
 
+
+Path the nucleotide database for blast
+		/reference/data/NCBI/blast/2023-08-31/nt
+
+
+${f%%_*} 	#take everything before the first occurance of _ including the _ 
+	infile=palte4_RAWfastq/combined_RAPiD-Genomics_BYU_105604_P005_WA01_i5-534_i7-97_L001-4_R1_001.fastq.gz
+	newDir=${infile%%/*}
+	palte4_RAWfastq/
+	
+find . -name <fileName>
+
+
+awk '/^S/{print ">"$2"\n"$3}' N_clydesmithi.asm.bp.p_ctg.gfa | fold > output.fa
 
