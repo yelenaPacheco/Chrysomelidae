@@ -7,7 +7,7 @@
 #SBATCH -t 7-00:00:00
 #SBATCH --array=1-12
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=yelena.marlese@gmail.com\
+#SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
 #blast search for multiple fasta files against the  NCBI nucleotide database
