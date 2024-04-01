@@ -33,3 +33,5 @@ hybpiper assemble \
 
 conda deactivate
 
+
+7-97_L001-4_P_R1.fastq_P_R1*
