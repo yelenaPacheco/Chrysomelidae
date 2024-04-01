@@ -8,6 +8,10 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
+
+
+###DONT USE YET, doesn't work, will update
+
 module load miniconda
 source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
 
