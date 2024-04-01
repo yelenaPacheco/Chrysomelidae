@@ -6,8 +6,7 @@
 #SBATCH -p short
 #SBATCH -t 2-00:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=yelena.marlese@gmail.com\
-
+#SBATCH --mail-user=yelena.pacheco@usda.gov
 
 #scripte to move and compress raw reads and hybpiper output fasta files to project directory 
 
