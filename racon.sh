@@ -6,17 +6,18 @@
 #SBATCH -p short
 #SBATCH -t 2-00:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=yelena.marlese@gmail.com
+#SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
 
 #--- Starrt timer
 t1=$(date +"%s")
 
+direct="/90daydata/aphid_phylogenomics/yelena/aphid_revio/canu/test"
 
 module load racon/1.5.0
 
-racon -t 40 ../m84100_230830_180417_s4.hifi_reads.fastq.gz  <samFile> N_clydesmithi_asm.contigs.fasta
+racon -t 40 m84100_230830_180417_s4.hifi_reads.fastq.gz  canu_asm.sam  ${direct}/N_clydesmithi_asm.contigs.fasta
 
 
 
