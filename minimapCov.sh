@@ -16,7 +16,8 @@ module load singularityCE/3.11.4
 module load minimap2/2.24
 module load samtools/1.17
 
-minimap2 -ax map-pb -t 20 N_clydesmithi_asm.contigs.fasta ../m84100_230830_180417_s4.hifi_reads.fastq.gz | samtools sort -@16 -O BAM >
+minimap2 -ax map-pb -t 20 N_clydesmithi_asm.contigs.fasta ../m84100_230830_180417_s4.hifi_reads.fastq.gz | samtools sort -@16 -O BAM -o minimap.bam -
+
 
 #---Complete job
 t2=$(date +"%s")
