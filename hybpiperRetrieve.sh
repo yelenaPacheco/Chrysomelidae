@@ -21,3 +21,9 @@ source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
 hybpiper retrieve_sequences -t_dna ColeopteraProbes.fasta dna --sample_names directory.list --fasta_dir Douglas_sequences
 
 conda deactivate
+
+
+
+# -t_dna fasta w/reference sequences 
+# --sample_names list of all directories produced by hybpiperAssemble.sh
+# --fasta_dir output directory name 
