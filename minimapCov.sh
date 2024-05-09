@@ -9,6 +9,8 @@
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
+#map reads to genome assembly for coverage 
+
 #--- Starrt timer
 t1=$(date +"%s")
 
