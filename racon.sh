@@ -9,6 +9,8 @@
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
+#polish genome assembly, use with canu assembly
+
 
 #--- Starrt timer
 t1=$(date +"%s")
