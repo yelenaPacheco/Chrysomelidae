@@ -10,6 +10,9 @@
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
 
+#spades genome assembly
+#for short reads 
+
 #set up array
 #inputReads2.list includes a list of all R1 reads 
 infile=$(cat inputReads2.list | head -n ${SLURM_ARRAY_TASK_ID} | tail -n1)
