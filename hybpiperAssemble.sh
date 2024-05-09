@@ -34,4 +34,12 @@ hybpiper assemble \
 conda deactivate
 
 
-7-97_L001-4_P_R1.fastq_P_R1*
+# test1.list list of al P_R1.fastq files
+# -r forward and reverse paired reads 
+# --unpaired unpaired reads
+# -t_dna fasta with reference loci
+# --prefix output directory name
+# match cpu and bbmap_threads to # of cores
+
+
+
