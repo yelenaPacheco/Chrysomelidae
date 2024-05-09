@@ -20,3 +20,7 @@ hybpiper stats --targetfile_dna ../ColeopteraProbes.fasta   gene directory.list
 
 
 conda deactivate
+
+
+# --targetfile_dna fasta file w/reference sequences
+# gene list of all directories output from hybpiperAssemble.sh
