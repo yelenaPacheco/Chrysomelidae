@@ -9,12 +9,6 @@
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
+#convert gfa file to fasta
 
-###DONT USE YET, doesn't work, will update
-
-module load miniconda
-source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
-
-gfastats -f  N_clydesmithi.asm.bp.p_ctg.gfa -o fa -j 20
-
-conda deactivate
+awk '/^S/{print ">"$2"\n"$3}' N_clydesmithi.asm.bp.p_ctg.gfa | fold > output.fa
