@@ -9,6 +9,12 @@
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
+
+#hifiasm genome assembly
+# -o output prefix 
+# -t number of threads, match with cores 
+
+
 module load miniconda
 source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
 
