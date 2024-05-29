@@ -8,7 +8,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
-
+#make a .paf file with minimap
 
 #--- Starrt timer
 t1=$(date +"%s")
