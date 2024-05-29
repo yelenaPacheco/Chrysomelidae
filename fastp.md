@@ -10,4 +10,4 @@
    *    Unpaired reads: *_U.fastq
    * **fastp_trimming_doc** that contains report files about reads that failed trimming/quality control. 
 
-Next step is Hybpiper read assembly
+Next step is Hybpiper read assembly [hybpiper.md](hybpiper.md)
