@@ -6,7 +6,8 @@
   See [fastp.md](fastp.md)
 5. Assemble reads and get sequence contigs  
    See [hybpiper.md](hybpiper.md)
-6. Tree assembly 
+6. Tree assembly
+   [treeAssembly.md](treeAssemlbly.md)
 
 
 
