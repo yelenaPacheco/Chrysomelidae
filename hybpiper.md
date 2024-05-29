@@ -19,4 +19,10 @@ Your working directory will be the __trimmed_reads__ directory created with [fas
    * Within the taxon directory there will be multiple subdirectories for each gene/locus in the *refSequences.fasta* file
 4. Make a list of all the taxon directories output from hybpiperAssemble.sh and name it *directory.list*
    You can do this using `ls -d */ > directory.list` You will have to removed the "/" from the direcotry name you can do this using nano
+5. Run [hybpiperRetrieve.sh](hybpiperRetrieve.sh)
+   * This will create a directory named __loci_fasta_files__ with a single fasta file for each locus in the *refSequences.fasta* file including all taxa where a contig was able to be assembled.
+6. In your __trimmed_reads__ directory run [hybpiperStats.sh](hybpiperStats.sh). This will give you a .tsv file with statistics on the number of reads mapped, number of contigs, number of loci, etc. for each taxon in your sample.
+7. In your __loci_fasta_files__ directory run [taxonCoverage.sh](taxonCoverage.sh) to create a .csv *taxonCoverage.csv* file that gives you the number of taxa in each gene/locus fasta file.
+
+You are now ready to move onto [treeAssembly.md](treeAssebmly.md)
    
