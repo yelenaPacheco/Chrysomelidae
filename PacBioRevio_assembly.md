@@ -22,4 +22,4 @@ Steps for Hifi long-read Pacbio Revio genome assembly
    Run (busco.sh)[busco.sh]
 
 10. Filtered .bam assebmly file for adaptor sedquences using (adaptFilt.sh)[adaptfilt.sh]
-      This script uses (hifiadapterfilt.sh)[https://github.com/sheinasim/HiFiAdapterFilt] 
+      This script uses [hifiadapterfilt.sh](https://github.com/sheinasim/HiFiAdapterFilt)
