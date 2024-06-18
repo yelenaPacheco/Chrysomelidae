@@ -15,3 +15,5 @@ module load blast+/2.15.0
 
 bash hifiadapterfilt.sh -p minimap -t 20 -o filter_2
 
+#-p prefix of assembly .bam, .fastq, .fastq.gz, .fq, .fq.gz
+#-o output prefix
