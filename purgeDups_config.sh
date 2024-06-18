@@ -8,6 +8,10 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
+################################################
+#I don't think I usedthis, instead clone repository and follow directions on github 
+#https://github.com/dfguan/purge_dups
+
 
 module load purge_dups/1.2.6
 
