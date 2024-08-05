@@ -5,6 +5,7 @@
 #SBATCH --array=1-100
 #SBATCH -n 8 -N 1
 #SBATCH -p short
+#SBATCH	--mem=8G
 #SBATCH -t 24:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
