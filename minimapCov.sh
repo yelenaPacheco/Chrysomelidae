@@ -26,3 +26,6 @@ t2=$(date +"%s")
 diff=$(($t2-$t1))
 echo "[---$SN---] ($(date)) $(($diff / 60)) minutes and $(($diff % 60)) seconds elapsed."
 echo "[---$SN---] ($(date)) $SN COMPLETE."
+
+
+#Try with - x map-hifi 
