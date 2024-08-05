@@ -8,6 +8,9 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
+###########################################################################
+###Didn't use, ran in interactive session instead#####
+
 
 #--- Starrt timer
 t1=$(date +"%s")

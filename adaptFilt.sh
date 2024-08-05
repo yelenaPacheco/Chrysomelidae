@@ -34,3 +34,5 @@ diff=$(($t2-$t1))
 echo "[---$SN---] ($(date)) $(($diff / 60)) minutes and $(($diff % 60)) seconds elapsed."
 echo "[---$SN---] ($(date)) $SN COMPLETE."
 
+#-p prefix of assembly .bam, .fastq, .fastq.gz, .fq, .fq.gz
+#-o output prefix
