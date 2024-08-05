@@ -9,6 +9,10 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
+
+
+##use to trimm longread sequence files
+
 software=/90daydata/shared/GenomeAssemblyWorkshop/software
 
 reads=/90daydata/aphid_phylogenomics/yelena/aphid_revio/round2/m84100_230830_180417_s4.hifi_reads.fastq.gz
