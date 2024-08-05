@@ -11,6 +11,9 @@
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
+##reformat multiple fastq files so header is compatible for aTRAM precursor
+
+
 #--- Starrt timer
 t1=$(date +"%s")
 
