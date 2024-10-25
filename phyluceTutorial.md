@@ -8,9 +8,9 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
 3. Now we need to change the names of the trimmed files to match the Phyluce format.
    * Make a `input.list` of all `R1` read files. `ls > *_P_R1.fastq`
      - Use [nameFormatPhhyluce.sh](nameFormatPhyluce.sh) to change the file names.
-   * Make a `input2.list` of all `1-READ1.fastq` files `ls > *-READ1.fastq`
+    * Make a `input2.list` of all `1-READ1.fastq` files `ls > *-READ1.fastq`
      - Use [make_subDirectories.sh](make_subDirectories.sh) to place trimmed read files into respective species directories.      
-5. Make a config file for the Phyluce assembly.
+4. Make a config file for the Phyluce assembly.
    * Make a `directory.list` of all species directories with trimmed read files `ls -d */ > directory.list`
    * Use [phyluce_config.py](phyluce_config.py) to make config file. 
-6. 
+5. Run [phyluceAssembly.sh](phyluceAssembly.sh)
