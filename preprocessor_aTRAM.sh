@@ -16,12 +16,12 @@ module load miniconda3
 source activate /home/yelena.pacheco/.conda/envs/aTRAM
 
 aTram='/project/aphid_phylogenomics/yelena/aTRAM'
+wrkDIR='/90daydata/leafbeetle_phylogenomics/yelena/test_phyluce/trimmed_reads/aTRAM'
 
-
-${aTram}/python atram_preprocessor.py \
-  --blast-db=/90daydata/leafbeetel_phylogenomics/yelena/test_phyluce/trimmed_reads/aTRAM/P002_WG03/P002_WG03 \
-  --end-1=/90daydata/leafbeetle_phylogenomics/yelena/test_phyluce/trimmed_reads/aTRAM/RAPiD-Genomics_F293_BYU_105604_P002_WG03_i5-536_i7-22_S5205_L001_P_R1.fastq \
-  --end-2=/90daydata/leafbeetle_phylogenomics/yelena/test_phyluce/trimmed_reads/aTRAM/RAPiD-Genomics_F293_BYU_105604_P002_WG03_i5-536_i7-22_S5205_L001_P_R2.fastq
+${aTram}/atram_preprocessor.py \
+  --blast-db=/90daydata/leafbeetle_phylogenomics/yelena/test_phyluce/trimmed_reads/aTRAM/test/CO2124 \
+  --end-1=${wrkDIR}/new_CO2124_Microphotus_sp_P_R1.fastq \
+  --end-2=${wrkDIR}/new_CO2124_Microphotus_sp_P_R1.fastq
 
 
 conda deactivate
