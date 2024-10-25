@@ -9,4 +9,5 @@ import sys
 with open ('directory.list', 'r') as f:
 	with open ('assembly.conf', 'w') as configFile:
 		for line in f:
-			configFile.write(line+':/90daydata/leafbeetle_phylogenomics/yelena/lampyrid/phyluce/'+line)
+			sampleName=line.split('/',1)[0].strip()
+            configFile.write(sampleName+':/90daydata/leafbeetle_phylogenomics/yelena/Douglas_phyluce/trimmed_reads/'+sampleName+'\n')
