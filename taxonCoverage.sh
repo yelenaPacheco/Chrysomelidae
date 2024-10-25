@@ -1,8 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=taxonCoverage
-#SBATCH --partition=batch
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=12
+#SBATCH -p short         
+#SBATCH -n 20 -N 1
 #SBATCH --mem=10gb
 #SBATCH --time=20:00:00
 #SBATCH --output=taxonCoverage.%j.out
@@ -11,7 +10,7 @@
 
 
 
-for file in *.fa  ##for all files with the ending ".fa" do the followting... need * to get all .$
+for file in *.FNA  ##for all files with the ending ".FNA" do the followting... need * to get all .$
 
   do
 
