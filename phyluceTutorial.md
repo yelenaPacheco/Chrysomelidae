@@ -13,3 +13,4 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
 5. Make a config file for the Phyluce assembly.
    * Make a `directory.list` of all species directories with trimmed read files `ls -d */ > directory.list`
    * Use [phyluce_config.py](phyluce_config.py) to make config file. 
+6. 
