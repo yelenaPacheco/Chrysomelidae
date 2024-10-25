@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -J hybpiperRetrieve
-#SBATCH -o hybpiperRetrieve_%A_%a.out
-#SBATCH -e hybpiperRetrieve_%A_%a.err
+#SBATCH -o hybpiperRetrieve_%A.out
+#SBATCH -e hybpiperRetrieve_%A.err
 #SBATCH -n 20 -N 1
 #SBATCH -p short
 #SBATCH -t 2-00:00:00
