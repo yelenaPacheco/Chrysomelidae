@@ -23,3 +23,5 @@ with open('srr.txt') as f:
 		print("Changed ", old1, " to ", new1, "/n")
 		os.rename(old2, new2)
 		print("Changed ", old2, " to ", new2, "/n")
+
+
