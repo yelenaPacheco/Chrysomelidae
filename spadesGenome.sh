@@ -10,8 +10,7 @@
 #SBATCH --mail-user=yelena.marlese@gmail.com
 
 
-#spades genome assembly
-#for short reads 
+
 
 #set up array
 #inputReads2.list includes a list of all R1 reads 
