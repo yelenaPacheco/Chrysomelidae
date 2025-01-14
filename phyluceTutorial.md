@@ -38,4 +38,9 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
     * First make a list of all the taxa you would like to get the loci fasta files for. You can use the directory.list doc, copy ```directory.list``` to new files ```taxon-set.conf``` add ```[all]``` as first line to taxon-set.conf doc
     * Run [phyluceMatchCounts.sh](phyluceMatchCounts.sh)
     * Output will be in ```taxon-sets``` directory
-10. Get fasta files 
+10. Get fasta file
+    * Run [phyluceGetFasta.sh](phyluceGetFasta.sh)
+    * This will create three files in the ```taxon-sets/all``` directory and one file in a new ```taxon-sets/all/log``` direcotry
+    * ```all-taxa-incomplete.fasta``` contaians sequences for each locus for each taxon
+11. Get individual taxon fasta files
+    * In the ```taxon-sets/all``` directory run 
