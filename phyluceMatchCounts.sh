@@ -20,4 +20,4 @@ phyluce_assembly_get_match_counts \
     --taxon-list-config  taxon-set.conf  \
     --taxon-group 'all' \
     --incomplete-matrix \
-    --output taxon-sets70/all/all-taxa-incomplete.conf
+    --output taxon-sets/all/all-taxa-incomplete.conf
