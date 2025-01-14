@@ -14,14 +14,28 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
     * ```cd trimmedReads```
     * Make a `input2.list` of all `*-READ1.fastq` files `ls > *-READ1.fastq`
      - Use [make_subDirectories.sh](make_subDirectories.sh) to place trimmed read files into respective species directories.      
-6. Make a config file for the Phyluce assembly.
+5. Make a config file for the Phyluce assembly.
    * Move one directory up from ```trimmedReads```  
      ```cd ../```
    * Make a `directory.list` of all species directories with trimmed read files `ls -d */ > directory.list`
        * You will need to remove the trailing ```/``` from each line on directory.list
        * Do this using ```nano directory.list```
        * In nano ```cntrl + shift \``` then follow instruction at bottom a screen.
-7. Make config file for assembly
    * Use [phyluce_config.py](phyluce_config.py) to make config file.
-   * Change path in line 13 to path for your trimmedReads directory
-9. Run [phyluceAssembly.sh](phyluceAssembly.sh)
+     * Change path in line 13 to path for your trimmedReads directory
+     * This will produce a file called ```assembly.conf```
+6. Run [phyluceAssembly.sh](phyluceAssembly.sh)
+   * Assembly output can be found in ```spades-assemblies``` directory
+   * Within the spades-assemblies directory you will see subdirectories labeld ```<taxonName>_spades``` and one directory called ```contigs```
+   * The contigs directory contains symlinks to all the assembled contigs in the respective taxon subdirectories.
+7. Format probe sequences for Phyluce
+   * Make sure fasta headers for probes are formatted in this exact format. ```>uce-<locus#>_p<probe# |source:<probeCreator>,probes-loucs:uce<locus#>,probes-probe:<probe#>``` example ```>uce-18_p8 |source:faircloth,probes-loucs:uce18,probes-probe:8```
+8. Match assembly contigs to probes
+   * Use [phyluce_match_contigs.sh](phyluce_match_contigs.sh)
+   * Chnage name of probe fasta files after  ```--probes```
+   * Output files can be found in new directory call ```uce-results```
+9. Extracting UCE loci
+    * First make a list of all the taxa you would like to get the loci fasta files for. You can use the directory.list doc, copy ```directory.list``` to new files ```taxon-set.conf``` add ```[all]``` as first line to taxon-set.conf doc
+    * Run [phyluceMatchCounts.sh](phyluceMatchCounts.sh)
+    * Output will be in ```taxon-sets``` directory
+10. Get fasta files 
