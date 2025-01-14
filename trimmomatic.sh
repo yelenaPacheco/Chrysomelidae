@@ -28,7 +28,7 @@ raw="/90daydata/leafbeetle_phylogenomics/yelena/publicDataPhyluce/rawReads"
 infile=$(cat input1.list | head -n ${SLURM_ARRAY_TASK_ID} | tail -n1)
 base=$(basename ${infile} _1.fastq.gz)
 
-java -jar /software/7/apps/trimmomatic/0.38/trimmomatic-0.38.jar PE -threads 20 -phred40 \
+java -jar /software/7/apps/trimmomatic/0.38/trimmomatic-0.38.jar PE -threads 20 -phred33 \
 ${raw}/${base}_1.fastq.gz ${raw}/${base}_2.fastq.gz \
 ${trimmed}/${base}-READ1.fastq ${trimmed}/${base}-READ1_singleton.fastq \
 ${trimmed}/${base}-READ2.fastq ${trimmed}/${base}-READ2_singleton.fastq \
