@@ -44,4 +44,5 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
     * ```all-taxa-incomplete.fasta``` contaians sequences for each locus for each taxon
 11. Get individual taxon fasta files
     * In the ```taxon-sets/all``` directory run [explodeFasta.sh](explodeFasta.sh)
-    * This will make directory ```exploded-fastas``` where there will be a fasta file for each taxon. 
+    * This will make directory ```exploded-fastas``` where there will be a fasta file for each taxon.
+    * An assembly summary for each taxon will also be produced a written to the stdout file. 
