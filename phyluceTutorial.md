@@ -32,7 +32,7 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
    * Make sure fasta headers for probes are formatted in this exact format. ```>uce-<locus#>_p<probe# |source:<probeCreator>,probes-loucs:uce<locus#>,probes-probe:<probe#>``` example ```>uce-18_p8 |source:faircloth,probes-loucs:uce18,probes-probe:8```
 8. Match assembly contigs to probes
    * Use [phyluce_match_contigs.sh](phyluce_match_contigs.sh)
-   * Chnage name of probe fasta files after  ```--probes```
+   * Change name of probe fasta files after  ```--probes```
    * Output files can be found in new directory call ```uce-results```
 9. Extracting UCE loci
     * First make a list of all the taxa you would like to get the loci fasta files for. You can use the directory.list doc, copy ```directory.list``` to new files ```taxon-set.conf``` add ```[all]``` as first line to taxon-set.conf doc
