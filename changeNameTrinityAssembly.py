@@ -9,12 +9,12 @@ import os
 
 with open('blast.list') as f:
 	for line in f:
-		taxaname=line.split(".",1)[0].strip()
-		extra=line.split(".",1)[1].strip()
-		newname=taxaname
-		oldname=taxaname+"."+extra
-		newFile=newname+".fasta"
-		os.rename(oldname, newFile)
+		taxaname=line.split(".",1)[0].strip()	#take characters before the first '.'
+		extra=line.split(".",1)[1].strip()		#take characters after the first '.'
+		newname=taxaname						#newname = species name 
+		oldname=taxaname+"."+extra				#oldname = 'species name'.tirnity.fasta, this could be the same as line
+		newFile=newname+".fasta"				#newFile is the new name of the file = species name .fasta 
+		os.rename(oldname, newFile)				#replace old file name with new file name 
 		
 
 		
