@@ -11,5 +11,5 @@
 
 
 for f in $(cat removeTrees.list) ; do 
-  rm "$f"
+  rm ${f}
 done
