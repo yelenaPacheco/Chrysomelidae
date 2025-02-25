@@ -18,7 +18,7 @@ t1=$(date +"%s")
 
 module load blast+/2.13.0
 
-blastparams="6 qseqid staxids bitscore std sscinames sskingdoms"
+blastparams="6 qseqid staxids bitscore std sscinames sskingdoms"	#fields to include in output, 6=specific formating style 
 
 
 blastn -task megablast -query N_clydesmithi_hifiasm_contigs.fa -db /reference/data/NCBI/blast/2023-08-31/nt -outfmt "6 qseqid staxids bitscore std sscinames sskingdoms stitle" -culling_limit 5 -num_threads 16 -evalue 1e-25 -out N_clydesmithi.megablast_nt
