@@ -17,3 +17,4 @@ do
 	grep -c '^@' ${line}-READ-singleton.fastq >> readCounts.txt
 done <directory.list
 	
+	
