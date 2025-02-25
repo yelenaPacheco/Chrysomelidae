@@ -9,7 +9,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
-#trimm adaptors from raw read fastq files 
+#trimm adaptors from raw read fastq files  using fastp
 #this script will do this for multiple directories with fastq sequencing files
 
 
