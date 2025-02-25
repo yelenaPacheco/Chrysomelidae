@@ -17,7 +17,7 @@
 #--- Starrt timer
 t1=$(date +"%s")
 
-
+#set up array
 infile=$(cat format1.list | head -n ${SLURM_ARRAY_TASK_ID} | tail -n1)
 
 
@@ -36,3 +36,5 @@ t2=$(date +"%s")
 diff=$(($t2-$t1))
 echo "[---$SN---] ($(date)) $(($diff / 60)) minutes and $(($diff % 60)) seconds elapsed."
 echo "[---$SN---] ($(date)) $SN COMPLETE."
+
+## new_${infile} output file 
