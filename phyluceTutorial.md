@@ -45,4 +45,9 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
 11. Get individual taxon fasta files
     * In the ```taxon-sets/all``` directory run [explodeFasta.sh](explodeFasta.sh)
     * This will make directory ```exploded-fastas``` where there will be a fasta file for each taxon.
-    * An assembly summary for each taxon will also be produced a written to the stdout file. 
+    * An assembly summary for each taxon will also be produced a written to the stdout file.
+12. To group fasta files my locus do the following steps.
+    * Run [phyluce_edgeTrimming.sh](phyluce_edgeTrimming.sh), make sure to change --taxa to your number of taxa
+        * You can determine the number of taxa with ```ls *.exploded-fastas | wc -l```
+    * Run [phyluce_internalTrimming.sh](phyluce_internalTrimming.sh), this will align sequences using MAFFT  
+    * 
