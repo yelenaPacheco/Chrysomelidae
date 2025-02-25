@@ -12,13 +12,13 @@ import os
 with open('Coleoptera_AHE_probes.tsv', 'r') as f:
 	with open ('ColeopteraProbes.fasta', 'w') as fasta:
 		for line in f:
-			if line.startswith('>')==True:
-				locus1=line.split('-')[0].strip()
-				locus2=locus1[1:]
-				refTax1=line.split('-')[1].strip()
-				refTax2=refTax1.split(' ')[0].strip()
-				fasta.write(">"+refTax2+"-"+locus2+'\n')
+			if line.startswith('>')==True:				#if the line starts with '>' do the following
+				locus1=line.split('-')[0].strip()		#takes characters before the '-', double check it doesn't just take '>Coleoptera' 
+				locus2=locus1[1:]						#remove '>'
+				refTax1=line.split('-')[1].strip()		#take characters after '-' this should be the taxonID, double check it takes right split  
+				refTax2=refTax1.split(' ')[0].strip()	#removes trailing spaces
+				fasta.write(">"+refTax2+"-"+locus2+'\n')	#rewrite to needed format (see above)
 			else: 
-				fasta.write(line.strip()+'\n')
+				fasta.write(line.strip()+'\n')			#if the line is a DNA sequence then write to file 
 				
 
