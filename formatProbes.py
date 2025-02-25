@@ -4,6 +4,8 @@ import glob
 import os
 
 #reformats probe fasta headers to work with Phyluce
+## Coleoptera-UCE-2.1k.-v1_test.fasta is the full beetle probe list, this is not the same as the Douglas Probe list 
+#for Douglas probes use formatProbesDouglasUCE.py
 
 
 
