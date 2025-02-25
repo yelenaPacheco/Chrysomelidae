@@ -4,17 +4,19 @@ import os
 import sys
 
 
-inputFile = sys.argv[1]
+##filteres short reads based on phred score
+
+inputFile = sys.argv[1]		#input read file
 
 
 
 file_handle= open(inputFile, "r")
 good_reads = (
 	rec
-	for rec in SeqIO.parse(file_handle, "fastq")
-	if min(rec.letter_annotations["phred_quality"]) >= 36
+	for rec in SeqIO.parse(file_handle, "fastq")			#indicating that input file is a fastq
+	if min(rec.letter_annotations["phred_quality"]) >= 36	#filtering individual reads based ona minimum phred score of 36
 )
-count = SeqIO.write(good_reads, "new_"+inputFile, "fastq")
+count = SeqIO.write(good_reads, "new_"+inputFile, "fastq")	#writing reads with >36 phred score to new fastq file
 print(f"Saved {count} reads.")
 file_handle.close()
 
