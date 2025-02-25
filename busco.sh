@@ -22,7 +22,7 @@ module load busco5/5.4.5
 
 busco -i N_clydesmithi_hifiasm_contigs.fa -m genome -l hemiptera_odb10  -c 40 --out BUSCO_
 
-
+#--out = output prefix 
 
 #---Complete job
 t2=$(date +"%s")
