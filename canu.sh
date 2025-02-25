@@ -19,7 +19,9 @@ canu -p N_clydesmithi_asm -d test \
 genomeSize=6m \
 -pacbio-hifi  m84100_230830_180417_s4.hifi_reads.fastq.gz
 
-
+# -p = output prefix
+# genomeSize is an estimate based on other aphids
+# -pacbio-hifi long reads fastq 
 
 # -p Prefix
 # -d output directory
