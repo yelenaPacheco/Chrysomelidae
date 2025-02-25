@@ -18,3 +18,5 @@
  
  
  fastqc -o fastqc_out -t 20 *.fastq.gz 
+ 
+ #runs fastqc for any *.fastq.gz files in current directory 
