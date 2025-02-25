@@ -13,17 +13,17 @@
 
 ##use to trimm longread sequence files
 
-software=/90daydata/shared/GenomeAssemblyWorkshop/software
+software=/90daydata/shared/GenomeAssemblyWorkshop/software #path to directory with chopper install for workshop
 
-reads=/90daydata/aphid_phylogenomics/yelena/aphid_revio/round2/m84100_230830_180417_s4.hifi_reads.fastq.gz
+reads=/90daydata/aphid_phylogenomics/yelena/aphid_revio/round2/m84100_230830_180417_s4.hifi_reads.fastq.gz	#long reads file 
 
 #--- Starrt timer
 t1=$(date +"%s")
 
 zcat $reads | $software/chopper -q 12 -l 100 \
---headcrop 50 | pigz > trimmedReads_cyldesmithi.fastq.gz
+--headcrop 50 | pigz > trimmedReads_cyldesmithi.fastq.gz 	#remove first 50 characters from each read #pigz are faste way of compressing to .gz
 
-less trimmedReads_cyldesmithi.fastq.gz | grep "^@SRR" -c
+less trimmedReads_cyldesmithi.fastq.gz | grep "^@SRR" -c	#count number of remaining reads 
 
 #---Complete job
 t2=$(date +"%s")
