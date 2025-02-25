@@ -1,0 +1,100 @@
+Environments
+	Need full path to activate env not in home directory
+		conda env list
+	to install something in environment first activate it 
+		Then you don't need to specify the path to that environment
+	to list all packages in environment
+		conda list
+	specific new env location
+		conda create --prefix=<envName>
+
+
+  
+  ls -d  */ | xargs rm -rf ##removes all directories and their contents without removing files 
+    #list all directories only 
+  
+
+
+ls -lrt --block-size=GB
+	##lists files' size in GB
+du -h -d 1  ## get summary of size of each directory 
+	
+--mem max memory per node
+--mem-per-cpu=MaxMemPerCPU
+
+
+################################################################
+	
+If you would like to see what BLAST databases are available to download, please run:
+$ update_blastdb.pl --showall [*]
+
+
+#Path the nucleotide database for blast on ceres
+		/reference/data/NCBI/blast/2023-08-31/nt
+
+
+${f%%_*} 	#take everything before the first occurance of _ including the _ 
+	infile=palte4_RAWfastq/combined_RAPiD-Genomics_BYU_105604_P005_WA01_i5-534_i7-97_L001-4_R1_001.fastq.gz
+	newDir=${infile%%/*}
+	palte4_RAWfastq/
+	
+find . -name <fileName>
+
+################################################################
+#Convert .gfa to fasta
+awk '/^S/{print ">"$2"\n"$3}' N_clydesmithi.asm.bp.p_ctg.gfa | fold > output.fa
+
+
+################################################################
+#"transfer nodes" for ceres and atlas
+ceres	ceres.scinet.usda.gov		ceres-dtn.scinet.usda.gov
+atlas	atlas-login.hpc.msstate.edu		atlas-dtn.hpc.msstate.edu	
+
+
+################################################################
+ln -s /full/path/to/data /nameOfLink # for softlink to reference other data without actually copying it over 
+rm file or directory name without / to remove softlink 
+
+
+################################################################
+pigz faster compression software 
+
+grep -c '^@'  #count number of reads in fastq file, can use zgrep for gzip files 
+zgrep # for .gz files
+
+find / -iname "*foo*txt"
+
+################################################################
+################################################################
+##Remove a bunch off files from  list 
+
+for f in $(cat 1.txt) ; do 
+  rm "$f"
+done
+
+
+or 
+
+
+xargs rm < 1.txt
+
+
+readlink -f file.txt
+################################################################
+################################################################
+
+r/4.4.0
+
+################################################################
+################################################################
+
+Regular expressions
+\d+ 	#match integer and all following integers
+\d+.*	#match integer and all following characters
+[ATCG] 	#match the characters ATC or G
+	
+
+
+###############################################################
+###############################################################
+seqkit #use to rename duplicate fasta headers 
