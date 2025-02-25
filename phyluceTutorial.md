@@ -61,4 +61,4 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
     * Make a list of all the fasta files ```ls *.fasta > input2.list```
     * Modify unAlign.sh so that --array range matches number of fasta files and that python module or conda env is loaded.
     * Rung [unAlign.sh](unAlign.sh).
-    * The output will be a fasta file with the modified file name 2+<originalFileName> example: 2uce-200.fasta 
+    * The output will be a fasta file with the modified file name 2+'originalFileName' example: 2uce-200.fasta 
