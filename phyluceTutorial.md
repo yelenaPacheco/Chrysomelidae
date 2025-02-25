@@ -50,4 +50,10 @@ Original Phyluce tutorial can be foud [here](https://phyluce.readthedocs.io/en/l
     * Run [phyluce_edgeTrimming.sh](phyluce_edgeTrimming.sh), make sure to change --taxa to your number of taxa
         * You can determine the number of taxa with ```ls *.exploded-fastas | wc -l```
     * Run [phyluce_internalTrimming.sh](phyluce_internalTrimming.sh), this will align sequences using MAFFT  
-    * 
+    * Run [alignmentCleaning.sh](alignmentCleaning.sh), this will clean up the sequence headers so it is just the species names. The output will be a nexus file.
+13. To convert the nexus files to fasta files use [convertNexusToFasta.sh](convertNexusToFasta.sh) and [convertNexusToFasta.py](convertNexusToFasta.py)
+    * ```cd mafft-nexus-internal-trimmed-clean```
+    * Make a list of all the nexus files ```ls *.nexus > input1.list```
+    * Modify the --array range for convertNexusToFasta.sh to match the number of nexus files.
+    * Modify convertNexusToFasta.sh to load python module or conda env as needed.
+    * Run [convertNexusToFasta.sh](convertNexusToFasta.sh)
