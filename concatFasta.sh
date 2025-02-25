@@ -9,7 +9,9 @@
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
-for file in */
+#this script puts all fasta files in the current dir into one fasta file. 
+
+for file in *.fasta
 do 
 	cat ${file} >> new_${file}
 done
