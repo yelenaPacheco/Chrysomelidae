@@ -12,6 +12,9 @@
 
 #use convertNexusToFasta.py in an array for multiple files at once
 
+ml miniconda
+source activate /project/leafbeetle_phylogenomics/yelena/hybpiper
+
 
 #input.list = list of all .nexus files 
 infile=$(cat input1.list | head -n ${SLURM_ARRAY_TASK_ID} | tail -n1)
@@ -19,3 +22,5 @@ base=$(basename ${infile} .nexus)
 
 
 python convertNexusToFasta.py ${infile} ${base}.fasta
+
+conda deactivate 
