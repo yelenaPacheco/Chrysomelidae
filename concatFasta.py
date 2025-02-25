@@ -21,3 +21,9 @@ for file in input_files:
 with open('combined.fasta', 'w') as output_file:
     for taxon, sequence in taxon_sequences.items():
         output_file.write(f'>{taxon}\n{sequence}\n')
+        
+
+
+###########################
+###########################
+#not sure I ever used this, got it online, use modifications of ...
