@@ -11,6 +11,7 @@
 
 module load phyluce/1.7.3
 
+#part of phyluce pipeline
 # explode the monolithic FASTA by taxon (you can also do by locus)
 phyluce_assembly_explode_get_fastas_file \
     --input all-taxa-incomplete.fasta \
