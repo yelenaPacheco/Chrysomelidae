@@ -2,7 +2,7 @@
 #SBATCH -J getFasta
 #SBATCH -o getFasta_%A.out
 #SBATCH -e getFasta_%A.err
-#SBATCH -N 1 -n 20
+#SBATCH -N 1 -n 40
 #SBATCH -t 7-00:00:00
 #SBATCH --mem=30G
 #SBATCH -p short,medium
