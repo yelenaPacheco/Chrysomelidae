@@ -2,7 +2,7 @@
 #SBATCH -J edgeTrim
 #SBATCH -o edgeTrim_%A.out
 #SBATCH -e edgeTrim_%A.err
-#SBATCH -n 20 -N 1
+#SBATCH -n 40 -N 1
 #SBATCH -p short
 #SBATCH -A aphid_phylogenomics
 #SBATCH -t 2-00:00:00
@@ -17,6 +17,6 @@ phyluce_align_seqcap_align \
     --output mafft-nexus-edge-trimmed \
     --taxa 100 \
     --aligner mafft \
-    --cores 20\
+    --cores 40\
     --incomplete-matrix \
     --log-path log
