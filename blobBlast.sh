@@ -5,7 +5,7 @@
 #SBATCH -N 1 -n 20
 #SBATCH -t 2-00:00:00
 #SBATCH -p short,scavenger,scavenger-gpu,scavenger-mem768,medium
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
