@@ -5,7 +5,7 @@
 #SBATCH -N 1 -n 10
 #SBATCH -t 1:00:00
 #SBATCH -p debug,mem-low,brief-low
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
