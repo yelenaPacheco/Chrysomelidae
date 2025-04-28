@@ -6,7 +6,7 @@
 #SBATCH -p medium
 #SBATCH -t 7-00:00:00
 #SBATCH --array=1-12
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=yelena.pacheco@usda.gov
 
 
