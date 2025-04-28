@@ -2,7 +2,7 @@
 #SBATCH -J ex_fasta
 #SBATCH -o ex_fasta_%A.out
 #SBATCH -e ex_fasta_%A.err
-#SBATCH -n 20 -N 1
+#SBATCH -n 40 -N 1
 #SBATCH -p atlas
 #SBATCH -A aphid_phylogenomics
 #SBATCH -t 2:00:00
